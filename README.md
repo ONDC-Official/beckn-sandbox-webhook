@@ -32,8 +32,9 @@ const bppClientUrl = `http://127.0.0.1:6001/${requestAction}`;
 3. You can change the port number inside `main.ts` file
 
 ### Docker installation
-1. Update `.env` file with SANDBOXURL and BPPCLIENTURL
-2. Once you update the `.env` file follow below steps for docker build and start the docker image.
+1. Go the project directory
+2. Update `.env` file with SANDBOXURL and BPPCLIENTURL
+3. Once you update the `.env` file follow below steps for docker build and start the docker image.
   ```bash
     docker build -t webhook-api .
     docker run --name webhook-api -it -d --network host webhook-api:latest
